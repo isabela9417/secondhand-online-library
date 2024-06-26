@@ -1,4 +1,28 @@
+<?php
+	include 'config.php';
 
+	if(asset($_POST['submit'])){
+		$name = mysqli_real_escape_string($conn, $_POST['name']);
+		$email = mysqli_real_escape_string($conn, $_POST['email']);
+		$password = mysqli_real_escape_string($conn, md5($_POST['password']));
+		$cpassword = mysqli_real_escape_string($conn, md5($_POST['password1']));
+		$user_type = $_POST['user_type'];
+
+		$select_user = smysqli_query($conn, "SELECT * FROM `students` WHERE email = '$email' AND password = '$password'") or die('query failed');
+		
+		// ensure that passwords do match
+		if(mysqli_num_rows($select_users) > 0){
+			$message[] = 'User already exist!';
+		}else{
+			if($password != $password1){
+				$message[] = 'Passweord does not match!';
+			}else{
+				mysqli_query($conn, "INSERT INTO `students` (name, email, password, user_type) VALUES('$name', '$email', '$password1', $user_type)") or die ('query failed');
+			}	
+		}
+	}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
