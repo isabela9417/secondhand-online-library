@@ -20,16 +20,15 @@
 			<p>new <a href="login.html">login</a> | <a href="register.html">Register</a> </p>
 		</div>
 	</div>
-
 	<div class="header-2">
 		<div class="flex">
 			<a href="home.html" class="logo">Second-hand Bookshop</a>
 			<nav class="navbar">
-				<a href="#home.html">home</a>
+				<a href="home.html">home</a>
 				<a href="about.html">about</a>
-				<a href="#shop.html">shop</a>
-				<a href="#contact.html">contact</a>
-				<a href="#order.html">order</a>
+				<a href="shop.html">shop</a>
+				<a href="contact.html">contact</a>
+				<a href="order.html">orders</a>
 			</nav>
 			<div class="icons">
 				<a href=""><div id="menu-btn" class="fas fa-bars"></div></a>
@@ -42,6 +41,6 @@
 				<p>Email: <span>user email comes here</span></p>
 				<a href="logout.html" class="delete-btn">logout</a>
 			</div>
-		</div>
+		</div> 
 	</div>
 </header>

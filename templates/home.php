@@ -9,14 +9,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <!-- Customized CSS -->
-<link rel="stylesheet" href="../css/admin_style.css">
+<link rel="stylesheet" href="../css/style.css">
 <title>Home Page</title>
 </head>
 <body> 
 
 
 
-<!-- customized admni js file link -->
+<!-- customized main js file link -->
 <script src="../js/script.js"></script>
 </body>
 </html>
