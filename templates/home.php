@@ -14,8 +14,9 @@
 </head>
 <body> 
 
+<?php include 'header.php'; ?>
 
-
+<?php include 'footer.php'; ?>
 <!-- customized main js file link -->
 <script src="../js/script.js"></script>
 </body>
