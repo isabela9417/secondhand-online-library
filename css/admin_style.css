@@ -83,6 +83,11 @@ section{
 	z-index: 10000;
 	gap: 1.5rem;
 }
+
+.message span{
+	font-size: 2rem;
+	color: var(--black);
+}
  
 .message i{
 	cursor: pointer;
@@ -492,9 +497,7 @@ section{
 
 	.header .flex .navbar{
 		position: absolute;
-		top: 99%;
-		left: 0;
-		right: 0;
+		top: 99%; left: 0; right: 0;
 		background-color: var(--white);
 		border-top: var(--border);
 		border-bottom: var(--border);
