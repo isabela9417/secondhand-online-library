@@ -176,7 +176,7 @@ section{
 .header .header-1 .flex{
 	padding: 2rem;
 	display: flex;
-	align-items: center:
+	align-items: center;
 	justify-content: space-between;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -190,7 +190,7 @@ section{
 .header .header-2 .flex{
 	padding: 2rem;
 	display: flex;
-	align-items: center:
+	align-items: center;
 	justify-content: space-between;
 	max-width: 1200px;
 	width: 100%;
@@ -273,7 +273,7 @@ section{
 .header .header-2 .flex .user-box p{
 	font-size: 2rem;
 	color: var(--grey);
-	margin-bottom: 1.5rem:;
+	margin-bottom: 1.5rem;
 }
 
 .header .header-2 .flex .user-box p span{
@@ -294,18 +294,33 @@ section{
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 1.5rem;
 }
 
 .footer .box-container .box h3{
 	text-transform: uppercase;
 	color: var(--black);
 	font-size: 2rem;
+	padding-bottom: 2rem;
 }
 
+.footer .box-container .box p, 
+.footer .box-container .box a{
+	display: block;
+	font-size: 1.7rem;
+	color: var(--light-color);
+	padding: 1rem 0;
+}
 
+.footer .box-container .box p i, 
+.footer .box-container .box a i{
+	color: var(--blue);
+	padding-right: 1rem;
+}
 
-
-
+.footer .box-container .box a:hover{
+	color: var(--blue);
+}
 
 
 
