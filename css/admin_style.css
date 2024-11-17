@@ -129,6 +129,11 @@ section{
 	background: var(--red);
 }
 
+.white-btn:hover{
+	background-color: var(--white);
+	color: var(--black);
+}
+
 @keyframes fadeIn{
 	0%{
 		transform: translateY(1rem);

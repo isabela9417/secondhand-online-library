@@ -50,6 +50,14 @@ section{
 	padding: 3rem 2rem;
 }
 
+.heading{
+	text-align: center;
+	margin-botton: 2rem;
+	text-transform: uppercase;
+	color: var(--black);
+	font-size: 4rem;
+}
+
 .message{
 	position: sticky;
 	top: 0;
@@ -147,6 +155,11 @@ section{
 	background: var(--red);
 }
 
+.white-btn:hover{
+	background-color: var(--white);
+	color: var(--black);
+}
+
 @keyframes fadeIn{
 	0%{
 		transform: translateY(1rem);
@@ -185,6 +198,12 @@ section{
 .header .header-2{
 	background-color: var(--white);
 	box-shadow: var(--box-shadow);
+}
+
+.header .header-2.active{
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	z-index: 1000;
 }
 
 .header .header-2 .flex{
@@ -284,6 +303,145 @@ section{
 	margin-top: 0;
 }
 
+/* home page */
+.home{
+	min-height: 80vh;
+	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/background2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home .content{
+	text-align: center;
+	width: 50rem;
+}
+
+.home .content h3{
+	font-size: 4rem; 
+	color: var(--grey);
+	text-transform: uppercase;
+}
+
+.home .content p{
+	font-size: 2rem;
+	color: var(--white);
+	padding: 1rem 0;
+	line-height: 1.5;
+}
+
+/* products section */
+.products .box-container{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 30rem);
+	align-items: flex-start;
+	gap: 1.5rem;
+	justify-content: center;
+}
+
+.products .box-container .box{
+	border-radius: .5rem;
+	background-color: var(--white);
+	box-shadow: var(--box-shadow);
+	padding: 2rem;
+	text-align: center;
+	border: var(--border);
+}
+
+.products .box-container .box .image{
+	height: 30rem;
+
+}
+.products .box-container .box .name{
+	padding: 1rem 0;
+	font-size: 2rem;
+	color: var(--black);
+}
+
+.products .box-container .box .qty{
+	width: 100%;
+	padding: 1.2rem 1.4rem;
+	border-radius: .5rem;
+	border: var(--border);
+	margin: 1rem 0;
+	font-size: 2rem;
+}
+
+.products .box-container .box .price{
+	position: flex;
+	top: 1rem; left: 1rem;
+	border-radius: .5rem;
+	padding: 1rem .1rem;
+	font-size: 2rem;
+	color: var(--white);
+	background-color: var(--red);
+}
+
+/* about us section */
+.about .flex{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.about .flex .image{
+	flex: 1 1 40rem;
+}
+
+.about .flex .image img{
+	width: 100%;
+}
+
+.about .flex .content{
+	flex: 1 1 40rem;
+	padding: 2rem;
+	background-color: var(--light-bg);
+}
+
+.about .flex .content h3{
+	font-size: 2.5rem;
+	color: var(--black);
+	text-transform: uppercase;
+}
+
+.about .flex .content p{
+	padding: 1rem 0;
+	line-height: 1.5;
+	font-size: 1.7rem;
+	color: var(--light-color);
+
+}
+
+.home-contact{
+	background-color: var(--black);
+}
+
+.home-contact .content{
+	max-width: 50rem;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.home-contact .content h3{
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+.home-contact .content p{
+	padding: 1rem 0;
+	line-height: 1.5;
+	color: var(--light-white);
+	font-size: 1.6rem;
+}
+
 /* footer section */
 .footer{
 	background-color: var(--light-bg);
@@ -294,7 +452,7 @@ section{
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-	gap: 1.5rem;
+	gap: 3rem;
 }
 
 .footer .box-container .box h3{
@@ -315,7 +473,7 @@ section{
 .footer .box-container .box p i, 
 .footer .box-container .box a i{
 	color: var(--blue);
-	padding-right: 1rem;
+	padding-right: .5rem;
 }
 
 .footer .box-container .box a:hover{
@@ -323,6 +481,18 @@ section{
 }
 
 
+.footer .credit{
+	text-align: center;
+	font-size: 2rem;
+	color: var(--light-color);
+	border-top: var(--light-color);
+	margin-top: 2.5rem;
+	padding-top: 2.5rem;
+}
+
+.footer .credit span{
+	color: var(--purple);
+}
 
 
 
@@ -359,10 +529,17 @@ section{
 		font-size: 2.5rem;
 		margin: 2rem;
 	}
+
+	.home .content h3{
+		font-size: 3.5rem;
+	}
 }
 
 @media(max-width: 450px){
 	html{
 		font-size: 50%;
+	}
+	.heading{
+		font-size: 3rem;
 	}
 }
