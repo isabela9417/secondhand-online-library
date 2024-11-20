@@ -52,7 +52,7 @@ section{
 
 .heading{
 	text-align: center;
-	margin-botton: 2rem;
+	margin-bottom: 2rem;
 	text-transform: uppercase;
 	color: var(--black);
 	font-size: 4rem;
@@ -306,7 +306,7 @@ section{
 /* home page */
 .home{
 	min-height: 80vh;
-	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/background2.jpg) no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/background4.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -441,6 +441,22 @@ section{
 	color: var(--light-white);
 	font-size: 1.6rem;
 }
+
+/* about us page/ section */
+
+#heading{
+	min-height: 50vh;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	gap: .5rem;
+	background: url(../images/background1.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
 
 /* footer section */
 .footer{
