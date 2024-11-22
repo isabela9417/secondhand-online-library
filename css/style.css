@@ -4,7 +4,7 @@
 	--blue: #2a00ff;
 	--black: #333;
 	--white: #fff;
-	--grey: #666;
+	--grey: #cbcbcb;
 	--red: #880808; 
 	--light-white: #ccc;
 	--light-bg: #f5f5f5;
@@ -321,13 +321,13 @@ section{
 
 .home .content h3{
 	font-size: 4rem; 
-	color: var(--grey);
+	color: var(--white);
 	text-transform: uppercase;
 }
 
 .home .content p{
 	font-size: 2rem;
-	color: var(--white);
+	color: var(--grey);
 	padding: 1rem 0;
 	line-height: 1.5;
 }
@@ -444,19 +444,36 @@ section{
 
 /* about us page/ section */
 
-#heading{
-	min-height: 50vh;
+.headings{
+	min-height: 40vh;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	gap: .5rem;
-	background: url(../images/background1.jpg) no-repeat;
+	gap: 1rem;
+	background: url(../images/background2.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
+.headings h3{
+	font-size: 5rem;
+	color: var(--grey);
+	text-transform: uppercase;
+}
 
+.headings p{
+	font-size: 2.5rem;
+	color: var(--light-color);
+}
+
+.headings p a{
+	color: var(--blue);
+}
+
+.headings p a:hover{
+	text-decoration: underline;
+}
 
 /* footer section */
 .footer{
@@ -554,6 +571,9 @@ section{
 @media(max-width: 450px){
 	html{
 		font-size: 50%;
+	}
+	.headings h3{
+		font-size: 3.5rem;
 	}
 	.heading{
 		font-size: 3rem;
