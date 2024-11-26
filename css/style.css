@@ -475,6 +475,146 @@ section{
 	text-decoration: underline;
 }
 
+/* reviews section or page  */
+.reviews{
+	background-color: var(--light-bg);
+}
+
+.reviews .box-container{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 1.5rem;
+	justify-content: center;
+}
+
+.reviews .box-container .box{
+	background-color: var(--white);
+	box-shadow: var(--box-shadow);
+	border-radius: .5rem;
+	text-align: center;
+	padding: 2rem;
+}
+
+.reviews .box-container .box img{
+	height: 20rem;
+	width: 20rem;
+	border-radius: 50%;
+}
+
+.reviews .box-container .box p{
+	padding: 1rem 0;
+	line-height: 2;
+	color: var(--light-color);
+	font-size: 1.5rem;
+}
+
+.reviews .box-container .box .stars{
+	background-color: var(--light-bg);
+	display: inline-block;
+	margin: .5rem 0;
+	padding: .5rem 1.5rem;
+}
+
+.reviews .box-container .box .stars i{
+	font-size: 1.7rem;
+	color: var(--blue);
+	margin: .2rem;
+}
+.reviews .box-container .box h3{
+	font-size: 2rem;
+	color: var(--black);
+	margin-top: .5rem;
+}
+
+.reviews .swiper{
+	justify-content: center;
+	margin: 2rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--blue);
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--blue);
+}
+/*  shop page/section */
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh; 
+}
+
+/* Search form styles */
+form#searchForm {
+    display: flex;
+    gap: 10px;
+    width: 50%; 
+    max-width: 80rem;
+}
+
+form#searchForm input[type="text"] {
+    padding: 1rem;
+    font-size: 1.6rem;
+    width: 100%; 
+    border: var(--border);
+    border-radius: 0.5rem;
+}
+
+
+form#searchForm button {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    background-color: var(--blue);
+    color: var(--light-white);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+form#searchForm button:hover {
+    background-color: var(--grey);
+	color: var(--light-bg);
+
+}
+/* contact */
+.contact form{
+	margin: 0 auto;
+	background-color: var(--light-bg);
+	border-radius: .5rem;
+	border: var(--border);
+	padding: 2rem;
+	max-width: 70rem;
+	text-align: center;
+}
+
+.contact form h3{
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	color: var(--black);
+}
+
+.contact form .box{
+	margin: 1rem 0;
+	width: 100%;
+	border: var(--border);
+	background-color: var(--white);
+	padding: 1.2rem 1.4rem;
+	font-size: 1.8rem;
+	color: var(--black);
+	border-radius: .5rem;
+}
+
+
+
 /* footer section */
 .footer{
 	background-color: var(--light-bg);

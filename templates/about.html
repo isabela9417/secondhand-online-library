@@ -1,58 +1,184 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Font Awesome CDN link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<!-- Customized CSS -->
-<link rel="stylesheet" href="../css/style.css">
-<title>About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Customized CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>About</title>
 </head>
-<body> 
-<!-- include the header here -->
 
-<div class="headings">
-    <h3>About Us</h3>
-    <p><a href="home.html">home</a> / about</p>
-</div>
+<body>
+    <!-- include the header here -->
 
-<section class="about">
-    <div class="flex">
-        <div class="image">
-            <img src="../images/background3.jpg">
-        </div>
-        <div class="content">
-            <h3>Why choose us</h3>
-            <p>Second-hand Bookshop is an online service where books and textbooks all sorts, either for self improvement, psychology, religius we got you a new one or second hand book. If you are a student or you want to buy a textbook either a brand new or a second hand rocket science we have that for you.</p><p>Our books are for everyone, we even have kids' bedtime story books covered for you as well, at an affordable prices too. And also you can have those as either new or second hand.</p>
-            <a href="contact.html" class="btn">Contact Us</a>
-        </div>
+    <div class="headings">
+        <h3>About Us</h3>
+        <p><a href="home.html">home</a> / about</p>
     </div>
-</section>
 
-<!-- reviews sectin -->
-<section class="reviews">
-    <h1 class="title">clients' reviews</h1>
-    <div class="box-container">
-        <div class="box">
-            <img src="images/background1.jpg">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
+    <section class="about">
+        <div class="flex">
+            <div class="image">
+                <img src="../images/background3.jpg">
+            </div>
+            <div class="content">
+                <h3>Why choose us</h3>
+                <p>Second-hand Bookshop is an online service where books and textbooks all sorts, either for self
+                    improvement, psychology, religius we got you a new one or second hand book.
+                    If you are a student or you want to buy a textbook either a brand new or a second hand rocket
+                    science we have that for you.</p>
+                <p>Our books are for everyone, we even have kids' bedtime story books covered for you as well, at an
+                    affordable prices too.
+                    And also you can have those as either new or second hand.</p>
+                <a href="contact.html" class="btn">Contact Us</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- include the footer here -->
-<!-- customized main js file link -->
-<script src="../js/script.js"></script>
+    <!-- reviews sectin -->
+    <section class="reviews">
+        <h1 class="heading">clients' reviews</h1>
+        <div class="box-container">
+            <div class="swiper reviews-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../images/testimonial1.jpg">
+                            <h3>Hope Meedo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../images/testimonial2.jpg">
+                            <h3>Dr Ntuli</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../images/testimonial3.jpg">
+                            <h3>Kopano Enica</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../images/testimonial4.jpeg">
+                            <h3>Noel Freizer</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../images/testimonial5.jpg">
+                            <h3>Matome Kalaka</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="../images/testimonial6.jpg">
+                            <h3>Awokodwa Loyiso</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const swiper = new Swiper('.reviews-slider', {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+            });
+        });
+    </script>
+
+
+
+    <!-- include the footer here -->
+    <!-- js swiper script link  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- customized main js file link -->
+    <script src="../js/script.js"></script>
 </body>
+
 </html>

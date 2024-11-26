@@ -27,6 +27,13 @@
 <section class="products">
 	<h3 class="heading">Books Available</h3>
 	<br><br>
+        <div class="search-container">
+            <form id="searchForm" method="POST" action="shop.php">
+                <input type="text" name="query" placeholder="Search products..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+	<br><br>
 	<div class="box-container">
 		<form action="" method="post" class="box">
 			<img class="image" src="../images/book1.jpg" alt="">
@@ -135,6 +142,7 @@
 			<input type="hidden" name="product_image" value="">
 			<input type="submit" name="product_name" value="add to cart" name="add_to_cart" class="btn">
 		</form>
+		<br><br>
 	</div>
 </section>
 
