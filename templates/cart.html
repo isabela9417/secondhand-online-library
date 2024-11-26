@@ -14,8 +14,27 @@
 </head>
 <body> 
 <!-- include the header here -->
+<div class="headings">
+    <h3>Shopping Cart</h3>
+    <p><a href="home.html">home</a> / about</p>
+</div>
 
-
+<section class="shopping-cart">
+	<h1 class="heading">products added</h1>
+	<div class="box-container">
+		<div class="box">
+			<a href="cart.html" class="fas fa-times"></a>
+			<img src="">
+			<div class="name"><h3>name of the product</h3></div>
+			<div class="price"><h3>price of the product</h3></div>
+			<form>
+				<input type="hidden" name="card_id" value="card_id">
+				<input type="number" min="1" value="quality">
+				<input type="submit" name="update_cart" value="update" class="option-btn">
+			</form>
+		</div>
+	</div>
+</section>
 <!-- include the footer here -->
 <!-- customized main js file link -->
 <script src="../js/script.js"></script>

@@ -613,6 +613,50 @@ form#searchForm button:hover {
 	border-radius: .5rem;
 }
 
+.shopping-cart .box-container{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 30rem);
+	gap: 1.5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.shopping-cart .box-container .box{
+	text-align: center;
+	padding: 2rem;
+	border-radius: .5rem;
+	background-color: var(--white);
+	box-shadow: var(--box-shadow);
+	position: relative;
+}
+
+.shopping-cart .box-container .box img{
+	height: 30rem;
+}
+
+.shopping-cart .box-container .box .fa-times{
+	position: absolute;
+	top: 1rem; right: 1rem;
+	height: 4.5rem;
+	width: 4.5rem;
+	line-height: 4.5rem;
+	font-size: 2rem;
+	background-color: var(--red);
+	color: var(--white);
+	border-radius: .5rem;
+}
+
+.shopping-cart .box-container .box .fa-times:hover{
+	background-color: var(--black);
+}
+
+.shopping-cart .box-container .box .name{
+	padding: 1rem 0;
+	font-size: 2rem;
+	color: var(--black);
+}
 
 
 /* footer section */
